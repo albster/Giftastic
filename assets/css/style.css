@@ -1,0 +1,12 @@
+body {
+    background-image: url(../images/rgb_static.jpg);
+    background-image: repeat;
+}
+
+html body div#musicalInstruments.row, html body div.container div.row, h1, p {
+    text-align: center;
+}
+html body div#musicalInstruments.row div.musical-item.col-sm3 h1.rating {
+    color: #ebebeb;
+}
+

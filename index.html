@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Magical Giftastic</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- my style sheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+          <div class="jumbotron">
+              <h1>Giphytastic!</h1>
+              <br>
+              <p>Search Giphy for to add more gifs, click on the boxes to populate random gifs related to the word in the box.</p>
+              <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <form id="musicalInstrumentForm" class="form-inLine">
+                            <div class="form-group form-group-lg">
+                                  <input type="text" class="form-control" id="musicalInstrument-input" placeholder="Search Giphy at your own risk..">
+                            </div>
+                            <button id="addMusicalInstrument" class="btn btn-default btn-lg" type="submit" value="Submit">Now!</button>
+                        </form>
+                    </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="btn-group" role="group" aria-label="..." id="musicalInstrumentButtons">
+                  </div>
+              </div>
+          </div>
+    </div>
+    
+    <div id="musicalInstruments" class="row">
+    </div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    </body> 
+</html>
+      
