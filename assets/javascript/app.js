@@ -3,7 +3,7 @@ $(function(){
     renderButtons(musicalInstruments, 'musicalInstrumentName', '#musicalInstrumentButtons');
 });
 
-var musicalInstruments = ['Electric Guitar', 'Drums', 'Bass', 'Piano', 'Vocals', 'Harmonica', 'Sitar', '12 String Guitar', 'Slide Guitar','Maracas'];
+var musicalInstruments = ['Lennon', 'Apollo','Anna Karina','Hanna Barbara', 'Rat Fink','Keith Moon', 'Ziggy Stardust', 'Soul Train', 'PopArt', 'Smile', 'Chaplin', 'Barbarella', 'Psychedelic', 'Sitar', 'Old TV', 'Op Art','Vespa','60s Mod','Optical Illusion', 'School House Rock'];
 
 // creates buttons for musical instruments
 function renderButtons(arrayToUse, classToAdd, areaToAddTo) {
@@ -34,20 +34,21 @@ $(document).on('click', '.musicalInstrumentName', function(){
     $('#musicalInstruments').empty();
     $('.musicalInstrumentName').removeClass('active');
     $(this).addClass('active');
-
+    // calls the giphy api
     var show = $(this).data('name');
     console.log('show', show);
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + show + "&api_key=4ht99PJTSwROjzsTFY4sB5HGrU6ZXvhx&limit=12&offset=12";
-
+    // ajax get request
     $.ajax({
              url: queryURL,
              method: 'GET'
     })
+
     .done(function(response) {
         console.log('response', response)
 
         var results = response.data;
-
+        // for loop
         for(var i=0; i < results.length; i++) {
             var musicalInstrumentDiv = $('<div class="musical-item col-sm3">');
             var rating = results[i].rating;

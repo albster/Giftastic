@@ -1,12 +1,32 @@
+*{
+	text-align: center;
+}
+
 body {
-    background-image: url(../images/rgb_static.jpg);
+    background-image: url(../images/static.png);
     background-image: repeat;
+}
+
+html body div.container div.jumbotron {
+    background-image: url(../images/colorbars.gif);
 }
 
 html body div#musicalInstruments.row, html body div.container div.row, h1, p {
     text-align: center;
 }
-html body div#musicalInstruments.row div.musical-item.col-sm3 h1.rating {
+
+.rating {
     color: #ebebeb;
+    font-size: 45px;
 }
 
+.musical-item {
+	border-radius: 10px;
+    min-height: 281px;
+    float: left;
+    padding: 5px;
+}
+
+.musicalInstumentImage {
+    margin: 0 auto;  
+}
