@@ -24,9 +24,10 @@ html body div#musicalInstruments.row, html body div.container div.row, h1, p {
 	border-radius: 10px;
     min-height: 281px;
     float: left;
-    padding: 5px;
+    
 }
 
 .musicalInstumentImage {
     margin: 0 auto;  
 }
+
